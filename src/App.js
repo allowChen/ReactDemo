@@ -1,12 +1,13 @@
 import React from 'react';
-import Home from './home/Home'
+// import Home from './home/Home'
+import FlowAnalysis from './detail/flow-analysis/flow-analysis'
 // import logo from './logo.svg';
 // import './App.css';
 
 function App() {
   return (
     <div className="App">
-        <Home/>
+      <FlowAnalysis></FlowAnalysis>
     </div>
   );
 }
