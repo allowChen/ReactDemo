@@ -1,0 +1,22 @@
+.swiper-container{
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+}
+.swiper-slide{
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+}
+.blueviolet{
+    background: brown;
+}
+.blueviolet{
+    background: blueviolet;
+}
+.aqua{
+    background: aqua;
+}
+.darkorange{
+    background: darkorange;
+}

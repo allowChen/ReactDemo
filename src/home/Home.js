@@ -1,20 +1,32 @@
-import React from 'react';
+import React, {Component} from 'react';
 import MHead from './header/Head'
-import { HashRouter } from 'react-router-dom'
+import MBody from './body/Body'
+import MFoot from './footer/Foot'
+import {HashRouter, Route, Redirect} from 'react-router-dom'
+
+import './home.css'
+
 // import {Header, }
 
-class Home extends React.Component{
+class Home extends Component {
     // constructor(props){
     //     super (props)
     // }
-    render(){
+    render() {
         return (
-            <div>
-                <MHead />
-                <HashRouter>
-                </HashRouter>
+            <div className='home'>
+                <MHead/>
+                <div className='main'>
+                    <HashRouter>
+                        <Route exact path="/" render={() => <Redirect to='/home'/>}/>
+                        <Route path='/home' component={MBody}/>
+                        {/*<Route path='/detail' component={}/>*/}
+                    </HashRouter>
+                </div>
+                <MFoot/>
             </div>
         )
     }
 }
+
 export default Home

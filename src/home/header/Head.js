@@ -1,8 +1,8 @@
-import React from 'react';
-import Logo from '../../logo.svg'
-import './head.less'
+import React,{Component} from 'react';
+import Logo from '../../images/logo.svg'
+import './head.css'
 
-class Header extends React.Component {
+class Header extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -23,7 +23,7 @@ class Header extends React.Component {
             <div className='header'>
                 <div className='head-con'>
                     <div className='head-logo'>
-                        <img width='60px' src={Logo} alt=""/>
+                        <img src={Logo} alt=""/>
                     </div>
                     <ul className='logon'>{this.defaultLogon()}</ul>
                 </div>
