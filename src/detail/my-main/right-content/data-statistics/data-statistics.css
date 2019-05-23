@@ -1,0 +1,74 @@
+.DS-right-top,
+.DS-right-bottom {
+    width: 980px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+.DS-right-bottom {
+    margin-top: 20px;
+}
+.DS-right-top h1,
+.DS-right-bottom h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.DS-right-top .right-top-content {
+    padding: 18px 20px;
+    color: #b1b2a6;
+    background-color: #f7fcff;
+    margin: 20px 0;
+}
+.DS-right-top .right-top-form {
+    display: flex;
+}
+.DS-right-top .right-top-form .form-left li {
+    line-height: 40px;
+    margin-left: 20px;
+}
+.DS-right-top .right-top-form .form-right {
+    margin-left: 40px;
+}
+.DS-right-top .right-top-form .form-right li {
+    line-height: 40px;
+}
+.DS-right-top .right-top-form .form-right li:last-of-type {
+    margin-bottom: 20px;
+}
+.DS-right-top .right-top-form .form-right .buy-count button {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    padding: 2px 5px;
+    outline: none;
+    margin-right: 5px;
+}
+.DS-right-top .right-top-form .form-right .buy-count button.active {
+    background-color: #4fc08d;
+    color: #ffffff;
+}
+.DS-right-top .right-top-form .form-right button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4fc08d;
+    color: #ffffff;
+    cursor: pointer;
+}
+.DS-right-bottom .right-bottom-content {
+    padding: 18px 20px;
+    margin: 5px 0;
+}
+.DS-right-bottom .right-bottom-form table {
+    margin-left: 20px;
+}
+.DS-right-bottom .right-bottom-form table,td {
+    border: 1px solid #b1b2a6;
+}
+.DS-right-bottom .right-bottom-form td {
+    padding: 10px 20px 10px 15px;
+}
+

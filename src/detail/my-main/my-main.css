@@ -1,0 +1,44 @@
+body {
+    background-color: #cccccc;
+}
+ul,
+li {
+    list-style-type: none;
+}
+button {
+    border: 1px solid transparent;
+}
+.F-parent {
+    width: 1200px;
+    margin: 40px auto;
+    display: flex;
+}
+.F-left {
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    position: relative;
+}
+.F-left img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.F-left ul {
+    position: absolute;
+    bottom: 30px;
+    line-height: 30px;
+}
+.F-left ul li {
+    width: 185px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.F-left ul li.active {
+    background-color: #4fc08d;
+    color: #ffffff;
+}

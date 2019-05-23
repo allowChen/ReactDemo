@@ -1,0 +1,104 @@
+.FA-right-top,
+.FA-right-bottom {
+    width: 980px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+.FA-right-bottom {
+    margin-top: 20px;
+}
+.FA-right-top h1,
+.FA-right-bottom h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.FA-right-top .right-top-content {
+    padding: 18px 20px;
+    color: #b1b2a6;
+    background-color: #f7fcff;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.FA-right-top .right-top-form {
+    display: flex;
+}
+.FA-right-top .right-top-form .form-left li {
+    line-height: 45px;
+    margin-left: 20px;
+}
+.FA-right-top .right-top-form .form-right {
+    margin-left: 40px;
+}
+.FA-right-top .right-top-form .form-right li {
+    line-height: 45px;
+}
+.FA-right-top .right-top-form .form-right li:last-of-type {
+    margin-bottom: 20px;
+}
+.FA-right-top .right-top-form .form-right .buy-count .bd-box {
+    width: 32px;
+    height: 20px;
+}
+.FA-right-top .right-top-form .form-right .buy-count span {
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 1px 10px;
+    border: 1px solid #cccccc;
+}
+
+.FA-right-top .right-top-form .form-right .validTime button,
+.FA-right-top .right-top-form .form-right .version button {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    padding: 2px 5px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.FA-right-top .right-top-form .form-right .validTime button.active,
+.FA-right-top .right-top-form .form-right .version button.active {
+    background-color: #4fc08d;
+    color: #ffffff;
+}
+.FA-right-top .right-top-form .form-right .buy {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4fc08d;
+    color: #ffffff;
+    cursor: pointer;
+}
+.FA-right-bottom {
+    padding-left: 20px;
+    width: 960px;
+}
+.FA-right-bottom h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.FA-right-bottom .product {
+    font-weight: 400;
+}
+.FA-right-bottom .right-bottom-content {
+    padding: 18px 20px;
+    margin: 5px 0;
+    padding-left: 20px;
+    line-height: 22px;
+}
+.FA-right-bottom .right-bottom-form table {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.FA-right-bottom .right-bottom-form table,td {
+    border: 1px solid #b1b2a6;
+}
+.FA-right-bottom .right-bottom-form td {
+    padding: 10px 20px 10px 15px;
+}

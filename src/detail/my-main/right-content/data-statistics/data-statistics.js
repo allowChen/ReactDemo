@@ -1,57 +1,72 @@
 import React from 'react'
-import './flow-analysis.css'
+import './data-statistics.css'
 
-class FlowAnalysis extends React.Component {
+class DataStatistics extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      arr: ['产品类型','适用地区','有效时间','总价'],
+      count: '红色版',
+      medium: '北京',
+      validTime: '半年',
+      totalPrice: '500',
+      flag: 0
+    }
+  }
+
+  sele(e, num) {
+    this.setState({
+      flag: num,
+      count: e.target.innerText
+    })
+  }
+
+  handleChange(e) {
+    this.setState({
+      medium: e.target.value
+    })
   }
 
   render() {
+    let flag = this.state.flag
     return (
-      <div className="F-parent">
-        <div className="F-left">
-          <img src={require('../../images/1.png')} alt=""/>
-          <ul>
-            <li>数据统计</li>
-            <li>数据预测</li>
-            <li>流量分析</li>
-            <li>广告发布</li>
-          </ul>
-        </div>
-        <div className="F-right">
-          <div className="F-right-top">
+      <div>
+        <div className="DS-right">
+          <div className="DS-right-top">
             <h1>数据统计</h1>
             <p className="right-top-content">历史资料,科学实验,检验,统计等所获得的和用于科学研究,技术设计,查证,决策等的数值加以统计为解决方案做前期准备</p>
             <div className="right-top-form">
               <div className="form-left">
                 <ul>
-                  <li>产品类型:</li>
-                  <li>适用地区:</li>
-                  <li>有效时间:</li>
-                  <li>总价:</li>
+                  {this.state.arr.map((el,index) => {
+                    return <li key={index}>{el}:</li>
+                  })}
                 </ul>
               </div>
               <div className="form-right">
                 <li className="buy-count">
-                  <button className="active">红色版</button>
-                  <button>绿色版</button>
-                  <button>紫色版</button>
+                  <button className={flag === 0?'active':null} onClick={e => this.sele(e, 0)}>红色版</button>
+                  <button className={flag === 1?'active':null} onClick={e => this.sele(e, 1)}>绿色版</button>
+                  <button className={flag === 2?'active':null} onClick={e => this.sele(e, 2)}>紫色版</button>
                 </li>
                 <li>
-                  <select name="" id="">
-                    <option value="">北京</option>
-                    <option value="">上海</option>
-                    <option value="">广州</option>
-                    <option value="">深圳</option>
+                  <select
+                    value={this.state.medium}
+                    onChange={(e) => this.handleChange(e)}
+                  >
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州">广州</option>
+                    <option value="深圳">深圳</option>
                   </select>
                 </li>
                 <li>半年</li>
                 <li>500元</li>
-                <button>立即购买</button>
+                <button onClick={() => {this.props.onClick(this.state)}}>立即购买</button>
               </div>
             </div>
           </div>
-          <div className="F-right-bottom">
+          <div className="DS-right-bottom">
             <h1>产品说明</h1>
             <p className="right-bottom-content">历史资料,科学实验,检验,统计等所获得的和用于科学研究,技术设计,查证,决策等的数值加以统计为解决方案做前期准备</p>
             <div className="right-bottom-form">
@@ -110,7 +125,6 @@ class FlowAnalysis extends React.Component {
       </div>
     )
   }
-
 }
 
-export default FlowAnalysis
+export default DataStatistics
