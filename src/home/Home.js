@@ -7,8 +7,6 @@ import MyMain from '../detail/my-main/my-main'
 
 import './home.css'
 
-// import {Header, }
-
 class Home extends Component {
     // constructor(props){
     //     super (props)
