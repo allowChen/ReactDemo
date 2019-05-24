@@ -29,9 +29,9 @@ class Spell extends Component {
                     <div className="swiper-slide aqua">700 X 300</div>
                     <div className="swiper-slide darkorange">700 X 300</div>
                 </div>
-                <div className="swiper-pagination"></div>
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
+                <div className="swiper-pagination"/>
+                <div className="swiper-button-prev"/>
+                <div className="swiper-button-next"/>
             </div>
         )
     }
