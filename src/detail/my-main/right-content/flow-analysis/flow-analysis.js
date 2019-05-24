@@ -33,7 +33,8 @@ class FlowAnalysis extends React.Component {
     let temp = this.state.count
     temp = --temp
     this.setState({
-      count: this.state.count>1?temp:this.state.count
+      count: this.state.count>1?temp:this.state.count,
+      totalPrice: this.state.count>1?29*temp:29
     })
   }
 
@@ -41,7 +42,8 @@ class FlowAnalysis extends React.Component {
     let temp = this.state.count
     temp = ++temp
     this.setState({
-      count: temp
+      count: temp,
+      totalPrice: 29*temp
     })
   }
 
