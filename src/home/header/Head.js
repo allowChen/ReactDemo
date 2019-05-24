@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Logo from '../../images/logo.svg'
+import {withRouter} from 'react-router-dom'
 import './head.css'
 
 class Header extends Component {
@@ -114,7 +115,7 @@ class Header extends Component {
             <div className='header'>
                 <div className='head-con'>
                     <div className='head-logo'>
-                        <img src={Logo} alt=""/>
+                        <img onClick={()=>this.props.history.push('/home')} src={Logo} alt=""/>
                     </div>
                     <ul className='logon'>{this.defaultLogon()}</ul>
                 </div>
@@ -126,4 +127,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default withRouter(Header)

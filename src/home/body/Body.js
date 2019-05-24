@@ -28,22 +28,22 @@ class Body extends Component {
             link: [
                 {
                     img: require('../../images/1.png'),
-                    title: '毛里求斯',
+                    title: '数据统计',
                     con: '位于印度洋的西南方'
                 },
                 {
                     img: require('../../images/2.png'),
-                    title: '爱沙尼亚',
+                    title: '数据预测',
                     con: '爱沙尼亚位于欧洲东北部'
                 },
                 {
                     img: require('../../images/3.png'),
-                    title: ' 斯里兰卡',
+                    title: ' 流量分析',
                     con: ' 位于南亚印度次大陆东南方外海的岛国，属于亚洲'
                 },
                 {
                     img: require('../../images/4.png'),
-                    title: '拉脱维亚',
+                    title: '广告发布',
                     con: '位于波罗的海东岸的北欧国家，是波罗的海国家之一'
                 }
             ]
@@ -52,7 +52,7 @@ class Body extends Component {
 
     links() {
         return this.state.link.map((item,index)=>{
-            return <Linker key={index} con={item} />
+            return <Linker key={index} index={index} con={item} />
         })
     }
 

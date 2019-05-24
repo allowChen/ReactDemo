@@ -13,17 +13,17 @@ class Home extends Component {
     // }
     render() {
         return (
-            <div className='home'>
-                <MHead/>
-                <div className='main'>
-                    <HashRouter>
+            <HashRouter>
+                <div className='home'>
+                    <MHead/>
+                    <div className='main'>
                         <Route exact path="/" render={() => <Redirect to='/home'/>}/>
                         <Route path='/home' component={MBody}/>
                         <Route path='/detail' component={MyMain}/>
-                    </HashRouter>
+                    </div>
+                    <MFoot/>
                 </div>
-                <MFoot/>
-            </div>
+            </HashRouter>
         )
     }
 }
