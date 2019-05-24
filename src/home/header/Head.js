@@ -14,16 +14,17 @@ class Header extends Component {
         }
     }
 
-    componentDidMount(){
-        document.addEventListener('keydown',(e)=>{
-            if (e.key==='Escape') {
+    componentDidMount() {
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
                 this.close()
             }
         })
     }
+
     componentWillUnmount() {
-        document.removeEventListener('keydown',(e)=>{
-            if (e.key==='Escape') {
+        document.removeEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
                 this.close()
             }
         })
@@ -46,7 +47,10 @@ class Header extends Component {
                                 </div>
                                 <div>
                                     <button onClick={() => this.affirm()}>登录</button>
-                                    <button onClick={() => { this.close() }}>取消</button>
+                                    <button onClick={() => {
+                                        this.close()
+                                    }}>取消
+                                    </button>
                                 </div>
                             </div>
                         )
@@ -115,7 +119,7 @@ class Header extends Component {
             <div className='header'>
                 <div className='head-con'>
                     <div className='head-logo'>
-                        <img onClick={()=>this.props.history.push('/home')} src={Logo} alt=""/>
+                        <img onClick={() => this.props.history.push('/home')} src={Logo} alt=""/>
                     </div>
                     <ul className='logon'>{this.defaultLogon()}</ul>
                 </div>

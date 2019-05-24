@@ -5,8 +5,9 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
+
 .shade-info {
     width: 855px;
     height: 340px;
@@ -15,42 +16,52 @@
     margin: 60px auto;
     overflow: hidden;
 }
+
 .shade-info .shade-close {
     float: right;
     padding-top: 8px;
     padding-right: 8px;
     cursor: pointer;
 }
+
 .shade-info .shade-content {
     width: 790px;
     height: 300px;
     margin: 25px auto 0;
 }
+
 .shade-info .shade-content table {
     width: 100%;
     border: 1px solid #cccccc;
 }
+
 .shade-info .shade-content table tr:first-of-type {
     background-color: #4fc08d;
     color: #ffffff;
 }
+
 .shade-info .shade-content table tr:first-of-type td {
     border: none;
 }
+
 .shade-info .shade-content table td {
     text-align: center;
     padding: 5px 0;
     border: 1px solid #cccccc;
 }
+
 .shade-info .shade-content .shade-select {
     margin: 20px 0 5px;
 }
+
 .shade-info .shade-content .shade-bank {
     width: 100%;
 }
+
 .shade-info .shade-content .shade-bank ul {
     overflow: hidden;
 }
+
 .shade-info .shade-content .shade-bank li {
     float: left;
     width: 118px;
@@ -60,15 +71,18 @@
     margin-right: 10px;
     border: 1px solid #cccccc;
 }
+
 .shade-info .shade-content .shade-bank img {
     display: block;
     width: 100%;
     background-size: cover;
     cursor: pointer;
 }
+
 .shade-info .shade-content .shade-bank img.active {
     border: 2px solid #4fc08d;
 }
+
 .shade-info .shade-content button {
     margin: 30px 0;
     padding: 5px 10px;

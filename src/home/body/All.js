@@ -13,12 +13,12 @@ class All extends Component {
 
     structure() {
         const all = this.state.all
-        return all.map((item, index)=>{
+        return all.map((item, index) => {
             return (
-                <div className='all-con' key={index}  style={{height: item.title?null:'478px'}}>
+                <div className='all-con' key={index} style={{height: item.title ? null : '478px'}}>
                     <h3>{item.title}</h3>
                     <ul>
-                        {item.con.map((desc, num)=>{
+                        {item.con.map((desc, num) => {
                             return (
                                 <li key={num}>{desc}</li>
                             )
@@ -38,4 +38,5 @@ class All extends Component {
         )
     }
 }
+
 export default All

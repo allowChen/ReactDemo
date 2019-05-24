@@ -2,30 +2,27 @@ import React, {Component} from 'react';
 import MHead from './header/Head'
 import MBody from './body/Body'
 import MFoot from './footer/Foot'
-import {HashRouter, Route, Redirect} from 'react-router-dom'
+import {Route, Switch, Redirect, withRouter} from 'react-router-dom'
 import MyMain from '../detail/my-main/my-main'
 
 import './home.css'
 
 class Home extends Component {
-    // constructor(props){
-    //     super (props)
-    // }
     render() {
         return (
-            <HashRouter>
-                <div className='home'>
-                    <MHead/>
-                    <div className='main'>
-                        <Route exact path="/" render={() => <Redirect to='/home'/>}/>
+            <div className='home'>
+                <MHead/>
+                <div className='main'>
+                    <Switch>
                         <Route path='/home' component={MBody}/>
                         <Route path='/detail' component={MyMain}/>
-                    </div>
-                    <MFoot/>
+                        <Redirect to='/home'/>
+                    </Switch>
                 </div>
-            </HashRouter>
+                <MFoot/>
+            </div>
         )
     }
 }
 
-export default Home
+export default withRouter(Home)

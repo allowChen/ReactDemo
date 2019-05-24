@@ -1,14 +1,17 @@
-.body{
+.body {
     display: flex;
     justify-content: space-around;
 }
-.body-left{
+
+.body-left {
     width: 270px;
 }
-.body-right{
+
+.body-right {
     width: 700px;
 }
-.link{
+
+.link {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

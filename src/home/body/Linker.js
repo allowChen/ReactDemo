@@ -2,10 +2,9 @@ import React, {Component} from 'react'
 import {withRouter} from 'react-router-dom'
 
 
-
 import './links.css'
 
-class Linker extends Component{
+class Linker extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -21,10 +20,11 @@ class Linker extends Component{
                 <div className='link-con'>
                     <h2>{link.title}</h2>
                     <p>{link.con}</p>
-                    <button onClick={()=>this.props.history.push('/detail?flag='+this.props.index)}>立即购买</button>
+                    <button onClick={() => this.props.history.push('/detail?flag=' + this.props.index)}>立即购买</button>
                 </div>
             </div>
         )
     }
 }
+
 export default withRouter(Linker)

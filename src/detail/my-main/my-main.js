@@ -11,11 +11,11 @@ import {withRouter} from 'react-router-dom'
 class MyMain extends React.Component {
     constructor(props) {
         super(props)
-        let num = Number(this.props.location.search.replace(/[^0-9]/g,''))
+        let num = Number(this.props.location.search.replace(/[^0-9]/g, ''))
         this.state = {
             show: 'none',
             obj: null,
-            flag: num ? num+1 : 1
+            flag: num ? num + 1 : 1
         }
     }
 

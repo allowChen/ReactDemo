@@ -51,8 +51,8 @@ class Body extends Component {
     }
 
     links() {
-        return this.state.link.map((item,index)=>{
-            return <Linker key={index} index={index} con={item} />
+        return this.state.link.map((item, index) => {
+            return <Linker key={index} index={index} con={item}/>
         })
     }
 

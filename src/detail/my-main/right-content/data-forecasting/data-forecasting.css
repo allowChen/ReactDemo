@@ -6,41 +6,51 @@
     overflow: auto;
     padding-bottom: 30px;
 }
+
 .DF-right-bottom {
     margin-top: 20px;
 }
+
 .DF-right-top h1,
 .DF-right-bottom h1 {
     margin-top: 20px;
     margin-left: 20px;
     font-size: 20px;
 }
+
 .DF-right-top .right-top-content {
     padding: 18px 20px;
     color: #b1b2a6;
     background-color: #f7fcff;
     margin: 20px 0;
 }
+
 .DF-right-top .right-top-form {
     display: flex;
 }
+
 .DF-right-top .right-top-form .form-left li {
     line-height: 45px;
     margin-left: 20px;
 }
+
 .DF-right-top .right-top-form .form-right {
     margin-left: 40px;
 }
+
 .DF-right-top .right-top-form .form-right li {
     line-height: 45px;
 }
+
 .DF-right-top .right-top-form .form-right li:last-of-type {
     margin-bottom: 20px;
 }
+
 .DF-right-top .right-top-form .form-right .buy-count .bd-box {
     width: 32px;
     height: 20px;
 }
+
 .DF-right-top .right-top-form .form-right .buy-count span {
     text-align: center;
     cursor: pointer;
@@ -59,10 +69,12 @@
     outline: none;
     margin-right: 5px;
 }
+
 .DF-right-top .right-top-form .form-right .medium button.active {
     background-color: #4fc08d;
     color: #ffffff;
 }
+
 .DF-right-top .right-top-form .form-right .buy {
     padding: 10px 20px;
     border-radius: 5px;
@@ -70,6 +82,7 @@
     color: #ffffff;
     cursor: pointer;
 }
+
 .DF-right-bottom .right-bottom-content {
     padding: 20px;
     letter-spacing: 2px;

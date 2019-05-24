@@ -1,4 +1,4 @@
-.links{
+.links {
     display: flex;
     width: 49%;
     padding: 20px;
@@ -6,17 +6,21 @@
     background: #ffffff;
     box-sizing: border-box;
 }
-.link-con{
+
+.link-con {
     padding: 0 20px;
 }
-.link-con h2{
+
+.link-con h2 {
     font-size: 20px;
     font-weight: 700;
 }
-.link-con p{
+
+.link-con p {
     margin-top: 26px;
 }
-.link-con button{
+
+.link-con button {
     margin-top: 26px;
     padding: 12px 16px;
     background: #4fc08d;

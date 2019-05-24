@@ -6,15 +6,18 @@
     overflow: auto;
     padding-bottom: 30px;
 }
+
 .FA-right-bottom {
     margin-top: 20px;
 }
+
 .FA-right-top h1,
 .FA-right-bottom h1 {
     margin-top: 20px;
     margin-left: 20px;
     font-size: 20px;
 }
+
 .FA-right-top .right-top-content {
     padding: 18px 20px;
     color: #b1b2a6;
@@ -23,26 +26,33 @@
     letter-spacing: 2px;
     line-height: 20px;
 }
+
 .FA-right-top .right-top-form {
     display: flex;
 }
+
 .FA-right-top .right-top-form .form-left li {
     line-height: 45px;
     margin-left: 20px;
 }
+
 .FA-right-top .right-top-form .form-right {
     margin-left: 40px;
 }
+
 .FA-right-top .right-top-form .form-right li {
     line-height: 45px;
 }
+
 .FA-right-top .right-top-form .form-right li:last-of-type {
     margin-bottom: 20px;
 }
+
 .FA-right-top .right-top-form .form-right .buy-count .bd-box {
     width: 32px;
     height: 20px;
 }
+
 .FA-right-top .right-top-form .form-right .buy-count span {
     text-align: center;
     cursor: pointer;
@@ -68,6 +78,7 @@
     background-color: #4fc08d;
     color: #ffffff;
 }
+
 .FA-right-top .right-top-form .form-right .buy {
     padding: 10px 20px;
     border-radius: 5px;
@@ -75,17 +86,21 @@
     color: #ffffff;
     cursor: pointer;
 }
+
 .FA-right-bottom {
     padding-left: 20px;
 }
+
 .FA-right-bottom h1 {
     margin-bottom: 10px;
     font-weight: 700;
 }
+
 .FA-right-bottom .product {
     color: #cccccc;
     font-weight: 400;
 }
+
 .FA-right-bottom p {
     padding-left: 20px;
     letter-spacing: 2px;
