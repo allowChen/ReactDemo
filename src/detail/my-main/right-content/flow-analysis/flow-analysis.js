@@ -56,8 +56,8 @@ class FlowAnalysis extends React.Component {
     <div>
       <div className="FA-right">
         <div className="FA-right-top">
-          <h1>广告发布</h1>
-          <p className="right-top-content">广告活动按照广告计划执行,到完成广告创作并形成广告作品之后,经过广告主的最后审核同意,即可送到预定的媒介发布刊播.这项工作一般由媒介部门的有关专业人员负责,他们的任务就是专门负责与有关媒介单位接洽,安排有关广告的发搏事宜,并对发搏质量实施监督</p>
+          <h1>流量分析</h1>
+          <p className="right-top-content">是指在获得网站访问量基本数据的情况下对有关数据进行统计,分析,从中发现用户访问网站的规律,并将这些规律与网络营销策略等相结合,从而发现目前网络营销活动中可能存在的问题,并为进一步修正或重新指定网络营销策略提供依据.当然这样的定义时站在网络营销管理的角度来考虑的</p>
           <div className="right-top-form">
             <div className="form-left">
               <ul>

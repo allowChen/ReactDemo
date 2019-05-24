@@ -27,24 +27,24 @@ class Body extends Component {
             ],
             link: [
                 {
-                    img: require('../../images/earth.png'),
-                    title: '数据统计',
-                    con: '数据统计'
+                    img: require('../../images/1.png'),
+                    title: '毛里求斯',
+                    con: '位于印度洋的西南方'
                 },
                 {
-                    img: require('../../images/automobile.png'),
-                    title: '数据统计',
-                    con: '数据统计'
+                    img: require('../../images/2.png'),
+                    title: '爱沙尼亚',
+                    con: '爱沙尼亚位于欧洲东北部'
                 },
                 {
-                    img: require('../../images/broadcast.png'),
-                    title: '数据统计',
-                    con: '数据统计'
+                    img: require('../../images/3.png'),
+                    title: ' 斯里兰卡',
+                    con: ' 位于南亚印度次大陆东南方外海的岛国，属于亚洲'
                 },
                 {
-                    img: require('../../images/mountain.png'),
-                    title: '数据统计',
-                    con: '数据统计'
+                    img: require('../../images/4.png'),
+                    title: '拉脱维亚',
+                    con: '位于波罗的海东岸的北欧国家，是波罗的海国家之一'
                 }
             ]
         }
