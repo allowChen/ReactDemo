@@ -11,10 +11,20 @@
 .shade-info {
     width: 855px;
     height: 340px;
+    animation: slidein 2s;
     background-color: #fff;
     border-radius: 5px;
     margin: 200px auto;
     overflow: hidden;
+}
+@keyframes slidein {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 .shade-info .shade-close {
